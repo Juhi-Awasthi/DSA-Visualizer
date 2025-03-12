@@ -1,0 +1,22 @@
+.sorting-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .array-bar {
+    width: 10px;
+    margin: 2px;
+    background-color: turquoise;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background: coral;
+    color: white;
+    cursor: pointer;
+  }
+  
