@@ -26,14 +26,14 @@
 
 import React from "react";
 import SortingVisualizer from "./components/SortingVisualizer";
-import BinarySearchVisualizer from "./components/BinarySearchVisualizer";
+
 
 function App() {
   return (
     <div className="App">
       <h1>DSA Visualizer</h1>
       <SortingVisualizer />
-      <BinarySearchVisualizer />
+      
     </div>
   );
 }
