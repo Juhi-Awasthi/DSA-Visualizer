@@ -26,20 +26,20 @@
 
 import React from "react";
 import SortingVisualizer from "./components/SortingVisualizer";
-import SearchingVisualizer from "./components/SearchingVisualizer";
-import SearchingVisualizerPage from "./pages/SearchingVisualizerPage";
 
 function App() {
+  // Function to open SearchingVisualizer in a new tab
+  const openSearchVisualizer = () => {
+    window.open("/search", "_blank", "width=600,height=600");
+  };
+
   return (
     <div className="App">
       <h1>DSA Visualizer</h1>
       <SortingVisualizer />
-      <Link to="/searching">
-          <button>Open Binary Search</button>
-      </Link>
+      <button onClick={openSearchVisualizer}>Open Searching Visualizer</button>
     </div>
   );
 }
 
 export default App;
-
