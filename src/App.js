@@ -24,21 +24,43 @@
 
 // export default App;
 
+// import React from "react";
+// import SortingVisualizer from "./components/SortingVisualizer";
+
+// function App() {
+//   // Function to open SearchingVisualizer in a new tab
+//   const openSearchVisualizer = () => {
+//     window.open("/search", "_blank", "width=600,height=600");
+//   };
+
+//   return (
+//     <div className="App">
+//       <h1>DSA Visualizer</h1>
+//       <SortingVisualizer />
+//       <button onClick={openSearchVisualizer}>Open Searching Visualizer</button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React from "react";
-import SortingVisualizer from "./components/SortingVisualizer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import SortingPage from "./pages/SortingPage";
+import SearchingPage from "./pages/SearchingPage";
+import StackPage from "./pages/StackPage";
+import QueuePage from "./pages/QueuePage";
 
 function App() {
-  // Function to open SearchingVisualizer in a new tab
-  const openSearchVisualizer = () => {
-    window.open("/search", "_blank", "width=600,height=600");
-  };
-
   return (
-    <div className="App">
-      <h1>DSA Visualizer</h1>
-      <SortingVisualizer />
-      <button onClick={openSearchVisualizer}>Open Searching Visualizer</button>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/sorting" element={<SortingPage />} />
+      <Route path="/search" element={<SearchingPage />} />
+      <Route path="/stack" element={<StackPage />} />
+      <Route path="/queue" element={<QueuePage />} />
+    </Routes>
   );
 }
 

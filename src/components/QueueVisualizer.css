@@ -1,0 +1,22 @@
+.queue-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .queue {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .queue-item {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
