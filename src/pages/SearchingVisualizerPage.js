@@ -3,8 +3,8 @@ import SearchingVisualizer from "../components/SearchingVisualizer";
 
 const SearchingPage = () => {
   return (
-    <div>
-      <h1>Binary Search Visualizer</h1>
+    <div className="searching-page">
+      <h1>Searching Algorithm Visualizer</h1>
       <SearchingVisualizer />
     </div>
   );

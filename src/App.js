@@ -48,7 +48,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import SortingPage from "./pages/SortingPage";
-import SearchingPage from "./pages/SearchingPage";
+import SearchingPage from "./pages/SearchingVisualizerPage";
 import StackPage from "./pages/StackPage";
 import QueuePage from "./pages/QueuePage";
 
