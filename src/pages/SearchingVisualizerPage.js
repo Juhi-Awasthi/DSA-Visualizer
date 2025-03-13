@@ -1,7 +1,7 @@
 import React from "react";
 import SearchingVisualizer from "../components/SearchingVisualizer";
 
-const SearchingVisualizerPage = () => {
+const SearchingPage = () => {
   return (
     <div>
       <h1>Binary Search Visualizer</h1>
@@ -10,4 +10,4 @@ const SearchingVisualizerPage = () => {
   );
 };
 
-export default SearchingVisualizerPage;
+export default SearchingPage;
